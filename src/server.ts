@@ -1,13 +1,16 @@
-import express from "express"
+import app from "./app"
 import config from "./config"
+import { initDB } from "./db"
 
-const app = express()
-const port = config.url
 
-app.get('/', (req, res) => {
-  res.send('Dev Pulse Server is on')
-})
+const port = config.port
 
-app.listen(port, () => {
+const main = async () => {
+  initDB()
+  // console.log(config.database_url);
+  app.listen(port, () => {
   console.log(`Dev Pulse is listening on port ${port}`)
 })
+}
+
+main()
