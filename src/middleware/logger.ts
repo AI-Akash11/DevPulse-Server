@@ -1,8 +1,12 @@
 import type { NextFunction, Request, Response } from "express";
+import fs from "fs";
 
-export const logger = ( req : Request, res : Response, next : NextFunction ) => {
+export const logger = (req: Request, res: Response, next: NextFunction) => {
+  const log = `Method --> ${req.method} | Time --> ${Date.now()} | URL --> ${req.url}\n`;
 
-    console.log(`[${new Date().toISOString()}] | ${req.method.padEnd(6)} | ${req.url}`);
+  fs.appendFile("logger.txt", log, (err) => {
+    // console.log(err);
+  });
 
-    next()
-}
+  next();
+};

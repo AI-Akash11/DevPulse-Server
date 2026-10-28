@@ -7,7 +7,7 @@ const port = config.port
 
 const main = async () => {
   initDB()
-  // console.log(config.database_url);
+
   app.listen(port, () => {
   console.log(`Dev Pulse is listening on port ${port}`)
 })
