@@ -1,3 +1,5 @@
 Method --> GET | Time --> 1793194139753 | URL --> /
 Method --> GET | Time --> 1793194146452 | URL --> /api/users
 Method --> GET | Time --> 1793194147698 | URL --> /api/users
+Method --> GET | Time --> 1793197105025 | URL --> /api/auth/signup
+Method --> POST | Time --> 1793197115348 | URL --> /api/auth/signup

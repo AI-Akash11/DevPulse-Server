@@ -3,6 +3,7 @@ import { logger } from "./middleware/logger";
 import globalErrorHandler from "./middleware/globalErrorHandler";
 import cors from "cors";
 import config from "./config";
+import { authRoute } from "./modules/auth/auth.route";
 
 const app : Application = express();
 
@@ -25,6 +26,10 @@ app.get('/', (req : Request, res : Response) => {
     message: "express server is on"
   })
 })
+
+
+app.use('/api/auth', authRoute)
+
 
 app.use(globalErrorHandler)
 
