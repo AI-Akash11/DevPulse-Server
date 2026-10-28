@@ -1,13 +1,15 @@
 import type { Response } from "express";
+import type { TResponse } from "../types";
 
-export function sendResponse<T>(
-  res: Response,
-  { message, data, error }: { message: unknown; data?: T; error?: boolean },
-  status = 200,
-): void {
-  res.status(status).json({
-    success: error ? false : true,
-    message,
-    data: error ? undefined : data,
+
+const sendResponse = <T>(res : Response, data : TResponse<T>) => {
+
+  res.status(data.status).json({
+    success: data.success,
+    message : data.message,
+    data: data.data,
+    error: data.error,
   });
 }
+
+export default sendResponse

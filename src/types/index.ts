@@ -26,3 +26,12 @@ export type Issue = {
   created_at: Date;
   updated_at: Date;
 };
+
+
+export type TResponse<T> = {
+    status : number;
+    success : boolean;
+    message : string;
+    data? : T;
+    error? : any
+}
