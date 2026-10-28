@@ -12,6 +12,7 @@ const config = {
     port: env.PORT,
     database_url: env.DATABASE_URL as string,
     node_env: env.NODE_ENV as string,
+    site_url: env.SITE_URL,
 
 }
 
