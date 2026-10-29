@@ -28,3 +28,5 @@ Method --> POST | Time --> 1793283560223 | URL --> /api/auth/login
 Method --> POST | Time --> 1793283643495 | URL --> /api/auth/login
 Method --> POST | Time --> 1793283656094 | URL --> /api/auth/login
 Method --> POST | Time --> 1793283686552 | URL --> /api/auth/login
+Method --> POST | Time --> 1793295162775 | URL --> /api/issues
+Method --> POST | Time --> 1793295254839 | URL --> /api/issues
