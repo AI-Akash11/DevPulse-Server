@@ -13,6 +13,8 @@ const config = {
     database_url: env.DATABASE_URL as string,
     node_env: env.NODE_ENV as string,
     site_url: env.SITE_URL,
+    jwt_secret: env.JWT_SECRET as string,
+
 
 }
 
