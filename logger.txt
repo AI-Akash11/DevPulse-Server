@@ -5,3 +5,7 @@ Method --> GET | Time --> 1793197105025 | URL --> /api/auth/signup
 Method --> POST | Time --> 1793197115348 | URL --> /api/auth/signup
 Method --> POST | Time --> 1793275565177 | URL --> /api/auth/signup
 Method --> POST | Time --> 1793275585300 | URL --> /api/auth/signup
+Method --> POST | Time --> 1793276649775 | URL --> /api/auth/signup
+Method --> POST | Time --> 1793276776014 | URL --> /api/auth/signup
+Method --> POST | Time --> 1793276808796 | URL --> /api/auth/signup
+Method --> POST | Time --> 1793277097231 | URL --> /api/auth/signup

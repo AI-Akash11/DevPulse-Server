@@ -11,7 +11,7 @@ const createUserIntoDB = async (payload : User) => {
 
 
     const result = await pool.query(`
-        INSERT INTO users (name, email, password, role) VALUES($1,$2,$3,$4) RETURNING *
+        INSERT INTO users (name, email, password, role) VALUES($1,$2,$3,COALESCE($4,'contributor')) RETURNING *
     `,
     [name, email, hashPassword, role]
 )
